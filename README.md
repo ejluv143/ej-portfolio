@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio AI Frontend
 
-## Getting Started
+A modern personal portfolio built with **Next.js**, featuring an integrated **AI-powered chatbot** connected to a Flask machine learning backend.
 
-First, run the development server:
+## Features
 
-```bash
+- Responsive portfolio design
+- Projects, skills, certificates, experience, services, and contact sections
+- Floating Messenger-style AI chatbot
+- Dark/light mode support
+- Flask ML chatbot API integration
+- Built with reusable React components
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Flask API backend
+- Vercel deployment
+
+## Project Structure
+
+```txt
+.
+├── app/
+├── components/
+├── public/
+├── next.config.ts
+├── package.json
+└── README.md
+Environment Variables
+
+Create a .env.local file:
+
+NEXT_PUBLIC_CHATBOT_API_URL=https://your-render-backend-url.onrender.com
+
+Example:
+
+NEXT_PUBLIC_CHATBOT_API_URL=https://portfolio-ai-chatbot-backend-xxx9.onrender.com
+Run Locally
+git clone https://github.com/yourusername/portfolio-ai-frontend.git
+cd portfolio-ai-frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is deployed on Vercel.
 
-## Learn More
+Build command:
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm start
+Backend
 
-## Deploy on Vercel
+The chatbot connects to a Flask ML backend:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://github.com/ejluv143/portfolio-ai-chatbot-backend
+Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+EJ Loudale Cañete
+
+GitHub: https://github.com/ejluv143
