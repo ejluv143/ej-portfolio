@@ -1,26 +1,37 @@
-# Portfolio AI Frontend
+# 🤖 Portfolio AI Frontend
 
-A modern personal portfolio built with **Next.js**, featuring an integrated **AI-powered chatbot** connected to a Flask machine learning backend.
+A modern, responsive developer portfolio built with **Next.js**, featuring an integrated **AI-powered chatbot** that interacts with a Flask machine learning backend.
 
-## Features
+---
 
-- Responsive portfolio design
-- Projects, skills, certificates, experience, services, and contact sections
-- Floating Messenger-style AI chatbot
-- Dark/light mode support
-- Flask ML chatbot API integration
-- Built with reusable React components
+## 🚀 Features
 
-## Tech Stack
+- 🎨 Clean and responsive UI design
+- 🤖 AI chatbot (Flask + ML backend integration)
+- 🌙 Dark / Light mode toggle
+- 📂 Sections:
+  - About Me
+  - Projects
+  - Skills
+  - Experience
+  - Certificates
+  - Services
+  - Contact
+- 💬 Draggable floating chatbot (Messenger-style)
+- ⚡ Fast performance with optimized components
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Flask API backend
-- Vercel deployment
+---
 
-## Project Structure
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **Styling:** Tailwind CSS
+- **Backend:** Flask (ML chatbot API)
+- **Deployment:** Vercel (frontend), Render (backend)
+
+---
+
+## 📂 Project Structure
 
 ```txt
 .
@@ -30,42 +41,44 @@ A modern personal portfolio built with **Next.js**, featuring an integrated **AI
 ├── next.config.ts
 ├── package.json
 └── README.md
-Environment Variables
+
+⚙️ Environment Variables
 
 Create a .env.local file:
 
-NEXT_PUBLIC_CHATBOT_API_URL=https://your-render-backend-url.onrender.com
+NEXT_PUBLIC_CHATBOT_API_URL=https://your-render-backend.onrender.com
 
 Example:
 
 NEXT_PUBLIC_CHATBOT_API_URL=https://portfolio-ai-chatbot-backend-xxx9.onrender.com
-Run Locally
-git clone https://github.com/yourusername/portfolio-ai-frontend.git
-cd portfolio-ai-frontend
+▶️ Run Locally
+git clone https://github.com/ejluv143/ej-portfolio.git
+cd ej-portfolio
 npm install
 npm run dev
 
 Open:
 
 http://localhost:3000
-Deployment
+🌍 Deployment
 
-This project is deployed on Vercel.
+Frontend deployed on Vercel
 
-Build command:
-
+Build Command:
 npm run build
-
-Start command:
-
+Start Command:
 npm start
-Backend
+🔗 Backend (AI Chatbot)
 
-The chatbot connects to a Flask ML backend:
+Flask ML backend repository:
 
 https://github.com/ejluv143/portfolio-ai-chatbot-backend
-Author
+👨‍💻 Author
 
 EJ Loudale Cañete
 
 GitHub: https://github.com/ejluv143
+Portfolio: (add your deployed link)
+⭐ Support
+
+If you like this project, feel free to ⭐ the repo and share feedback!
