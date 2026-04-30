@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
 /* =========================
    ROOT COLORS (MANUAL THEME)
 ========================= */
@@ -40,10 +55,12 @@ html {
 }
 
 body {
+  min-height: 100svh;
   background: var(--background);
   color: var(--foreground);
-  font-size: var(--fs-base);
+  font-size: clamp(14px, 1vw, 18px);
   font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   margin: 0 auto;
   overflow-x: hidden;

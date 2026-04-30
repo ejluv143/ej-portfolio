@@ -73,7 +73,8 @@ export default function Services() {
               key={index}
               className="
                 group
-                h-[clamp(320px,28vw,420px)]
+                min-h-[320px]
+                h-auto
                 [perspective:1200px]
               "
             >

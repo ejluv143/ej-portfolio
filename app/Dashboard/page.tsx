@@ -223,29 +223,23 @@ export default function DashboardHome() {
         )}
 
     {/* HERO */}
-<section
-  id="home"
-  className="
-    relative
-    min-h-[calc(100svh-120px)]
-    w-full
-    flex flex-col xl:flex-row
-    items-center justify-center
+    <section
+      id="home"
+      className="
+        relative
+        min-h-[calc(100svh-120px)]
+        w-full
+        flex flex-col xl:flex-row
+        items-center justify-center
 
-    gap-[clamp(40px,6vw,140px)]
-    scroll-mt-24
-    overflow-hidden
-  "
->
+        gap-10 sm:gap-[clamp(28px,6vw,100px)]
+        scroll-mt-24
+        overflow-hidden
+      "
+    >
 
-  {/* 🔥 BACKGROUND GLOW ORBS */}
-  <div className="absolute inset-0 -z-10">
-    <div className="absolute w-[500px] h-[500px] bg-blue-500/20 blur-[120px] top-[-100px] left-[-100px] animate-pulse" />
-    <div className="absolute w-[600px] h-[600px] bg-white/10 blur-[140px] bottom-[-150px] right-[-150px] animate-pulse" />
-  </div>
-
-  {/* PROFILE */}
-  <div className="relative flex-shrink-0">
+      {/* PROFILE */}
+      <div className="relative flex-shrink-0">
 
     {/* 🔥 GLOW RING */}
     <div className="
@@ -283,13 +277,13 @@ export default function DashboardHome() {
   <div
     className="
       w-full
-      max-w-[clamp(320px,55vw,1200px)]
+      max-w-[clamp(320px,90vw,900px)]
 
       bg-white/5
       border border-white/10
       rounded-[clamp(20px,2vw,40px)]
 
-      p-[clamp(30px,5vw,90px)]
+      p-[clamp(24px,4vw,70px)]
 
       text-center xl:text-left
 
