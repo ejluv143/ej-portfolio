@@ -1,84 +1,86 @@
-# 🤖 Portfolio AI Frontend
+# 👋 Hi, I'm EJ Loudale Cañete
 
-A modern, responsive developer portfolio built with **Next.js**, featuring an integrated **AI-powered chatbot** that interacts with a Flask machine learning backend.
+💻 IT Graduate | 🤖 Machine Learning Enthusiast | ⚙️ ATM Technician  
+🚀 Building real-world systems combining **AI, Web Development, and IoT**
 
 ---
 
-## 🚀 Features
+## 🚀 About Me
 
-- 🎨 Clean and responsive UI design
-- 🤖 AI chatbot (Flask + ML backend integration)
-- 🌙 Dark / Light mode toggle
-- 📂 Sections:
-  - About Me
-  - Projects
-  - Skills
-  - Experience
-  - Certificates
-  - Services
-  - Contact
-- 💬 Draggable floating chatbot (Messenger-style)
-- ⚡ Fast performance with optimized components
+- 🔧 Former **ATM Technician** with hands-on hardware + systems experience  
+- 💡 Transitioning into **Software Development & AI Engineering**  
+- 🧠 Currently learning **Machine Learning, Deep Learning, and Full-Stack Development**  
+- 🛠️ Passionate about building **practical, real-world solutions**
+
+---
+
+## 🧩 Featured Projects
+
+### 🤖 AI Portfolio Chatbot
+- ML-powered chatbot using **Flask + scikit-learn**
+- Integrated into a **Next.js portfolio**
+- Handles user queries about skills, projects, and experience
+
+👉 Backend: https://github.com/ejluv143/portfolio-ai-chatbot-backend  
+👉 Frontend: https://github.com/ejluv143/ej-portfolio  
+
+---
+
+### 📊 Machine Learning Projects
+- Regression & Classification models
+- Model evaluation and optimization
+- Practical ML implementations from real datasets
+
+---
+
+### 🌐 Portfolio Website
+- Built with **Next.js + Tailwind CSS**
+- Includes AI chatbot, dynamic UI, and responsive design
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js, React, TypeScript
-- **Styling:** Tailwind CSS
-- **Backend:** Flask (ML chatbot API)
-- **Deployment:** Vercel (frontend), Render (backend)
+**Languages**
+- Python, JavaScript, TypeScript
+
+**Frontend**
+- React, Next.js, Tailwind CSS
+
+**Backend**
+- Flask, REST APIs
+
+**Machine Learning**
+- scikit-learn, NumPy, Pandas
+
+**Tools**
+- Git, GitHub, Vercel, Render
 
 ---
 
-## 📂 Project Structure
+## 📈 Current Focus
 
-```txt
-.
-├── app/
-├── components/
-├── public/
-├── next.config.ts
-├── package.json
-└── README.md
+- 🤖 Improving AI chatbot to be more intelligent (LLMs, NLP)
+- 🌐 Building full-stack applications
+- ⚙️ Combining hardware + software (IoT systems)
 
-⚙️ Environment Variables
+---
 
-Create a .env.local file:
+## 🎯 Goals
 
-NEXT_PUBLIC_CHATBOT_API_URL=https://your-render-backend.onrender.com
+- Become a **Machine Learning Engineer / Full-Stack Developer**
+- Build impactful real-world systems
+- Contribute to open-source projects
 
-Example:
+---
 
-NEXT_PUBLIC_CHATBOT_API_URL=https://portfolio-ai-chatbot-backend-xxx9.onrender.com
-▶️ Run Locally
-git clone https://github.com/ejluv143/ej-portfolio.git
-cd ej-portfolio
-npm install
-npm run dev
+## 📫 Connect With Me
 
-Open:
+- GitHub: https://github.com/ejluv143
+- Portfolio: (add your deployed Vercel link here)
 
-http://localhost:3000
-🌍 Deployment
+---
 
-Frontend deployed on Vercel
+## ⚡ Fun Fact
 
-Build Command:
-npm run build
-Start Command:
-npm start
-🔗 Backend (AI Chatbot)
-
-Flask ML backend repository:
-
-https://github.com/ejluv143/portfolio-ai-chatbot-backend
-👨‍💻 Author
-
-EJ Loudale Cañete
-
-GitHub: https://github.com/ejluv143
-Portfolio: (add your deployed link)
-⭐ Support
-
-If you like this project, feel free to ⭐ the repo and share feedback!
+I combine **hardware experience + software + AI** — not just code, but real systems 🚀
