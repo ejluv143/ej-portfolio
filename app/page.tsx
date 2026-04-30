@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Intro from "./components/Intro";
 import Loader from "./components/Loader";
 import DashboardHome from "./Dashboard/page";
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const skipIntro = searchParams.get("skipIntro") === "true";
 
@@ -16,13 +16,9 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      {stage === "intro" && (
-        <Intro onFinish={() => setStage("loading")} />
-      )}
+      {stage === "intro" && <Intro onFinish={() => setStage("loading")} />}
 
-      {stage === "loading" && (
-        <Loader onFinish={() => setStage("portfolio")} />
-      )}
+      {stage === "loading" && <Loader onFinish={() => setStage("portfolio")} />}
 
       {stage === "portfolio" && (
         <div className="animate-portfolio-reveal">
@@ -30,5 +26,13 @@ export default function Home() {
         </div>
       )}
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<main className="min-h-screen bg-black" />}>
+      <HomeContent />
+    </Suspense>
   );
 }
