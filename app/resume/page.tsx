@@ -1,17 +1,10 @@
 import { Suspense } from "react";
 import ResumeClient from "./ResumeClient";
-
-function LoadingFallback() {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
-    </div>
-  );
-}
+import ResumeLoadingFallback from "./ResumeLoadingFallback";
 
 export default function ResumePage() {
   return (
-    <Suspense fallback={<LoadingFallback />}>
+    <Suspense fallback={<ResumeLoadingFallback />}>
       <ResumeClient />
     </Suspense>
   );
