@@ -77,7 +77,7 @@
 ## 📫 Connect With Me
 
 - GitHub: https://github.com/ejluv143
-- Portfolio: (add your deployed Vercel link here)
+- Portfolio: https://ej-portfolio-chi.vercel.app/?showLoader=true
 
 ---
 
