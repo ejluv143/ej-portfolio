@@ -9,9 +9,10 @@ import DashboardHome from "../Dashboard/page";
 export default function HomeContent() {
   const searchParams = useSearchParams();
   const skipIntro = searchParams.get("skipIntro") === "true";
+  const showLoader = searchParams.get("showLoader") === "true";
 
   const [stage, setStage] = useState<"intro" | "loading" | "portfolio">(
-    skipIntro ? "portfolio" : "intro"
+    showLoader ? "loading" : skipIntro ? "portfolio" : "intro"
   );
 
   return (

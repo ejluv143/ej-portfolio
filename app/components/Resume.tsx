@@ -44,7 +44,7 @@ export default function Resume() {
           "
         >
           <Link
-  href="/?skipIntro=true"
+  href="/?showLoader=true"
   className="text-sm sm:text-lg xl:text-xl font-bold tracking-wide hover:text-blue-500 transition-colors"
 >
   ← Back to Portfolio
