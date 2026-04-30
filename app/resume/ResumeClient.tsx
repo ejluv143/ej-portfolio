@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Loader from "../components/Loader";
 import Resume from "../components/Resume";
 
 export default function ResumeClient() {
@@ -15,11 +16,7 @@ export default function ResumeClient() {
   }, []);
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
-      </div>
-    );
+    return <Loader onFinish={() => setLoading(false)} />;
   }
 
   return <Resume />;
