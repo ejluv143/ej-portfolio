@@ -3,7 +3,13 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export default function Loader({ onFinish }: { onFinish: () => void }) {
+interface LoaderProps {
+  onFinish: () => void;
+  fadeOut?: boolean;
+  message?: string;
+}
+
+export default function Loader({ onFinish, fadeOut = false, message = "Loading Portfolio..." }: LoaderProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -28,7 +34,12 @@ export default function Loader({ onFinish }: { onFinish: () => void }) {
   }, [onFinish]);
 
   return (
-    <div className="fixed inset-0 z-[9998] flex flex-col items-center justify-center bg-black text-white">
+    <div
+      className={
+        "fixed inset-0 z-[9998] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500 ease-out " +
+        (fadeOut ? "opacity-0 pointer-events-none" : "opacity-100")
+      }
+    >
       <div className="relative mb-10">
         <div className="absolute inset-0 rounded-full bg-blue-500/40 blur-[40px]" />
 
@@ -44,9 +55,7 @@ export default function Loader({ onFinish }: { onFinish: () => void }) {
         </div>
       </div>
 
-      <h2 className="mb-4 text-[clamp(20px,2vw,32px)] font-bold">
-        Loading Portfolio...
-      </h2>
+      <h2 className="mb-4 text-[clamp(20px,2vw,32px)] font-bold">{message}</h2>
 
       <div className="mb-3 h-2 w-[250px] overflow-hidden rounded-full bg-gray-800">
         <div
