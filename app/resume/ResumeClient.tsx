@@ -1,24 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import Resume from "../components/Resume";
 
 export default function ResumeClient() {
-  const searchParams = useSearchParams();
-  const fromHome = searchParams.get("fromHome") === "true";
-
-  const [loading, setLoading] = useState(fromHome);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (fromHome) {
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 2000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-      return () => clearTimeout(timer);
-    }
-  }, [fromHome]);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (loading) {
     return (

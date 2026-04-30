@@ -348,7 +348,7 @@ export default function DashboardHome() {
       "
     >
     <Link
-  href="/resume?fromHome=true"
+  href="/resume"
   className="
     px-[clamp(18px,1.5vw,36px)]
     py-[clamp(12px,1vw,20px)]
