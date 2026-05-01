@@ -4,12 +4,16 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 interface LoaderProps {
-  onFinish: () => void;
+  onFinish?: () => void; // ✅ now optional
   fadeOut?: boolean;
   message?: string;
 }
 
-export default function Loader({ onFinish, fadeOut = false, message = "Loading Portfolio..." }: LoaderProps) {
+export default function Loader({
+  onFinish,
+  fadeOut = false,
+  message = "Loading Portfolio...",
+}: LoaderProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -23,7 +27,7 @@ export default function Loader({ onFinish, fadeOut = false, message = "Loading P
         clearInterval(interval);
 
         setTimeout(() => {
-          onFinish();
+          onFinish?.(); // ✅ safe call (no error if undefined)
         }, 500);
       }
 
@@ -40,6 +44,7 @@ export default function Loader({ onFinish, fadeOut = false, message = "Loading P
         (fadeOut ? "opacity-0 pointer-events-none" : "opacity-100")
       }
     >
+      {/* Glow + Avatar */}
       <div className="relative mb-10">
         <div className="absolute inset-0 rounded-full bg-blue-500/40 blur-[40px]" />
 
@@ -55,8 +60,12 @@ export default function Loader({ onFinish, fadeOut = false, message = "Loading P
         </div>
       </div>
 
-      <h2 className="mb-4 text-[clamp(20px,2vw,32px)] font-bold">{message}</h2>
+      {/* Message */}
+      <h2 className="mb-4 text-[clamp(20px,2vw,32px)] font-bold">
+        {message}
+      </h2>
 
+      {/* Progress Bar */}
       <div className="mb-3 h-2 w-[250px] overflow-hidden rounded-full bg-gray-800">
         <div
           className="h-full bg-blue-500 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.8)]"
@@ -64,7 +73,10 @@ export default function Loader({ onFinish, fadeOut = false, message = "Loading P
         />
       </div>
 
-      <p className="text-sm text-gray-400">{Math.round(progress)}%</p>
+      {/* Percentage */}
+      <p className="text-sm text-gray-400">
+        {Math.round(progress)}%
+      </p>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import { link } from "fs/promises";
+
 const certificates = [
   {
     title: "Bachelor of Science in Information Technology",
@@ -12,12 +14,21 @@ const certificates = [
   {
     title: "Supervised Machine Learning: Regression and Classification",
     issuer: "DeepLearning.AI / Coursera",
-    year: "2024",
+    year: "2026",
     description:
       "Covers linear regression, logistic regression, and foundational ML concepts.",
     image: "/image.png",
     link: "https://www.coursera.org/account/accomplishments/verify/HAHV9C4YMXL6", 
   },
+   {
+  title: "Advanced Learning Algorithms",
+  issuer: "DeepLearning.AI / Coursera",
+  year: "2026",
+  description:
+    "Covers neural networks, backpropagation, decision trees, and ensemble methods like random forests and boosting, along with techniques to improve model performance.",
+  image: "/certt2.png",
+  link: "https://www.coursera.org/account/accomplishments/verify/D3HH0RDDZJ3I",
+},
 ];
 
 export default function Certificates() {
