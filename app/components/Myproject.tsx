@@ -20,7 +20,7 @@ export default function MyProjects() {
         "Full-stack AI web app that predicts house construction costs with real-time inputs, smart insights, and cost breakdown.",
       tech: ["Next.js", "Tailwind CSS", "Flask", "Machine Learning"],
       image: "/houseai.png",
-      live: "https://houseai-cost-predictor.vercel.app",
+      live: "https://houseai-chi.vercel.app/",
       github: "https://github.com/ejluv143/houseai-cost-predictor",
       featured: true,
     },
@@ -119,9 +119,7 @@ export default function MyProjects() {
                       </div>
 
                       <div className="mt-auto flex items-center justify-between gap-3">
-                        <span className="rounded-full bg-blue-500 px-5 py-3 text-sm font-bold text-white shadow-[0_0_20px_rgba(59,130,246,0.45)]">
-                          Hover to View
-                        </span>
+                       
 
                         <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">
                           {project.featured ? "Featured" : "Project"} →
