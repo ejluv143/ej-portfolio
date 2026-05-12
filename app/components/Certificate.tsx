@@ -29,6 +29,24 @@ const certificates = [
   image: "/certt2.png",
   link: "https://www.coursera.org/account/accomplishments/verify/D3HH0RDDZJ3I",
 },
+ {
+  title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
+  issuer: "DeepLearning.AI / Coursera",
+  year: "2026",
+  description:
+    "Covers unsupervised learning techniques like clustering and dimensionality reduction, recommender systems, and reinforcement learning concepts.",
+  image: "/cert3.png",
+  link: "https://www.coursera.org/account/accomplishments/verify/9GYR3JDXQ9DG",
+},
+{
+  title: "Machine Learning Specialization",
+  issuer: "DeepLearning.AI / Coursera",
+  year: "2026",
+  description:
+    "Covers a wide range of ML topics including supervised and unsupervised learning, deep learning, and practical applications across various domains.",
+  image: "/MachineLearning.png",
+  link: "https://www.coursera.org/account/accomplishments/specialization/R9C6800MQ08T",
+},
 ];
 
 export default function Certificates() {
